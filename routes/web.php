@@ -9,6 +9,6 @@ Route::get('/', function () {
 
 Volt::route('/reverse/{word}', 'reverse');
 
-Volt::route('/upper/abc', 'upper');
+Volt::route('/{page}/{word}', 'upper');
 
-Volt::route('/lower/ABC', 'lower');
+// Volt::route('/lower/ABC', 'lower');
