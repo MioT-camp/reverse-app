@@ -6,9 +6,9 @@ state(['page']);
 state(['word']);
 
 mount(function () {
-    if ($this->page == 'upper' && $this->word == 'abc') {
+    if ($this->page == 'upper') {
         $this->word_changed = strtoupper($this->word);
-    } elseif ($this->page == 'lower' && $this->word == 'ABC') {
+    } elseif ($this->page == 'lower') {
         $this->word_changed = strtolower($this->word);
     }
 });
